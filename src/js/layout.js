@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
-import Contactos from "./views/contactos";
+import Contactos from "./views/Contactos";
 import CrearContacto from "./views/CrearContacto";
 
 import { Navbar } from "./component/navbar";
@@ -22,7 +22,6 @@ const Layout = () => {
 						<Route path="/" element={<Home />} />
 						<Route path="/contactos" element={<Contactos />} />
 						<Route path="/crearcontacto" element={<CrearContacto />} />
-						<Route path="/crearcontacto/:id" element={<DetalleContacto />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
 					<Footer />
